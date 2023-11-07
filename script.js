@@ -34,24 +34,42 @@
 
 
 
-const bills = [22, 295, 176, 440, 37, 105, , 10, 1100, 86]
+const bills = [22, 295, 176, 440, 37, 105,  10, 1100, 86]
 function myFunction(bexsis){
     const tips =[]
     const totals = []
+   
     for (let i = 0 ; i < bexsis.length; i++){
         let tip;
         if (bills[i] >50 && bills[i] < 300){
             tip = bills[i] * 0.15
+
         }
         else{
             tip = bills[i] * 0.2
         }
         tips.push(tip)
         totals.push(tip + bills[i])
-
     }
-    return [tips, totals]   
+
+    let Sum = 0 ;
+
+    for (let x =0; x<totals.length; x++){
+            Sum += totals[x];
+            // console.log(Sum);
+    }
+
+  
+    let ortalama = Sum /totals.length
+    return [tips, totals, ortalama]   
 
 }
 
 console.log(myFunction(bills))
+
+let a
+
+console.log();
+
+
+
