@@ -11,9 +11,9 @@
 
 
 const bills = [22, 295, 176, 440, 37, 105, , 10, 1100, 86]
-const tips =[]
-const totals = []
 function myFunction(bexsis){
+    const tips =[]
+    const totals = []
     for (let i = 0 ; i < bexsis.length; i++){
         if (bills[i] >50 && bills[i] < 300){
             tips.push(bexsis[i]*0.15)
