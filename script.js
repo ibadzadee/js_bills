@@ -73,3 +73,23 @@ console.log();
 
 
 
+bills.forEach (function(item, index){
+    console.log(item , index)
+})
+//  burada arrow function yerine istediyim,iz function istifade ede bilerik.
+
+const person ={
+    name: "Sara",
+    age: 20
+}
+
+for(const elemet in person){
+    console.log(person[elemet])
+}
+
+let = myMap = bills.map((element) =>{
+    return element
+}
+)
+
+// for in , for of , forEach , map 
